@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ejercicio 5</title>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<h1>Información sobre el producto</h1>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+		
+		<fieldset>
+			<legend>Datos básicos</legend>
+			<label for="nombre">Nombre</label><br>
+			<input type="text" name="nombre"></br><br>
+			<label for="comentarios">Descripción</label></br><br>
+			<textarea name="comentarios" id="" cols="30" rows="10"></textarea></br><br>
+			<label for="foto">Foto</label>
+			<input type="file" name="foto"></br><br>
+			<input type="checkbox" name="check"><label for="check">Añadir contador de visitas</label></br>
+		</fieldset>
+		<fieldset>
+			<legend>Datos económicos</legend>
+			<label for="price">Precio</label>
+			<input type="text" name="price">
+			<select name="combo" size="5" multiple>
+				<option value="" selected="">--Selecciona--</option>
+				<option value="4" >4%</option>
+				<option value="7" >7%</option>
+				<option value="10" >10%</option>
+				<option value="21" >21%</option>
+			</select>>
+
+			
+		</fieldset>
+		<label for="apellidos">Apellidos</label><br>
+		<input type="text" name="apellidos"></br>
+		<label for="contrasena">Contraseña</label><br>
+		<input type="password" name="contrasena"></br>
+		<label for="dni">DNI</label><br>
+		<input type="text" name="dni"></br>
+		<label for="nombre">Sexo</label><br>
+		<input type="radio" name="sexo" value="Hombre" checked=""><label for="sexo">Hombre</label></br><br>
+		<input type="radio" name="sexo" value="Mujer"><label for="sexo">Mujer</label></br><br>
+		
+		
+		
+		<input type="submit" name="enviar" value="Guardar cambios">
+		<input type="reset" name="borrar" value="Borrar los datos introducidos">
+	</form>
+</body>
+</html>

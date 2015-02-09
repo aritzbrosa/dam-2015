@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Ejercicio 4</title>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<h1>Rellena tu CV</h1>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="POST" enctype="multipart/form-data">
+		<label for="nombre">Nombre</label><br>
+		<input type="text" name="nombre"></br>
+		<label for="apellidos">Apellidos</label><br>
+		<input type="text" name="apellidos"></br>
+		<label for="contrasena">Contraseña</label><br>
+		<input type="password" name="contrasena"></br>
+		<label for="dni">DNI</label><br>
+		<input type="text" name="dni"></br>
+		<label for="nombre">Sexo</label><br>
+		<input type="radio" name="sexo" value="Hombre" checked=""><label for="sexo">Hombre</label></br><br>
+		<input type="radio" name="sexo" value="Mujer"><label for="sexo">Mujer</label></br><br>
+		<input type="file" name="foto"></br><br>
+		<textarea name="comentarios" id="" cols="30" rows="10"></textarea></br><br>
+		<input type="checkbox" name="check"><label for="check">Suscribirme al boletín de novedades</label></br><br>
+		<input type="submit" name="enviar" value="Guardar cambios">
+		<input type="reset" name="borrar" value="Borrar los datos introducidos">
+	</form>
+</body>
+</html>
