@@ -1,0 +1,45 @@
+.fleft{
+	float:left;
+}
+
+.fright{
+	float:right;
+}
+
+.container{
+	border: 1px solid gray;
+	background-color: #CCC; 
+	padding:0.5em;
+	margin-bottom: 20px;
+}
+
+.container span{
+	border: 1px;
+}
+
+.clearfix:before,	.clearfix:after	{
+	content:	"";
+	display:	table;
+}
+
+.clearfix:after	{
+	clear:	both;
+}
+
+.clearfix	{
+	zoom:	1;
+}
+
+.box {
+	position:fixed;
+	top: 100px;
+	left:100px;
+}
+
+.origin{
+	position:relative;
+}
+
+body{
+	padding:1em;
+}
