@@ -1,9 +1,13 @@
 .fleft{
+	display: inline-block;
 	float:left;
+	width:100px;
 }
 
 .fright{
 	float:right;
+	display: inline-block;
+	width:100px;
 }
 
 .container{
@@ -15,6 +19,8 @@
 
 .container span{
 	border: 1px;
+	font-style:italic;
+	text-decoration: blink;
 }
 
 .clearfix:before,	.clearfix:after	{
