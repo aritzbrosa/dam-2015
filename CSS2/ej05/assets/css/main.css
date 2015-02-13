@@ -52,19 +52,24 @@ h1,ul{
 
 }
 
+.txt-right{
+	text-align: right;
+}
+
+.txt-left:{
+	text-align: left;
+}
+
 .tabla table{
+	width:100%%;
+	border-collapse: collapse;
+
 	margin:0 auto;
 	width:960px;
 	background:#CCC;
 	text-align: left;
 }
 
-.fila {
-	background: #FFF;
-	margin:2px 4px;
-	border:1px solid #CCC;
-	margin: auto 4px;
-}
 
 .filacorriente{
 	margin:0;
@@ -72,4 +77,32 @@ h1,ul{
 
 .foot{
 	text-align: right;
+}
+
+.tabla{
+	border: 3px solid #CCC;
+}
+
+.tabla th, .tabla td{
+	padding: 3px 5px;
+}
+
+.tabla thead,.tabla tfoot{
+	background-color:#CCC;
+}
+
+.tabla thead{
+	text-align: left;
+}
+
+.tabla tfoot{
+	font-weight: bold;
+}
+
+.tabla .price-th{
+	width: 70px;
+}
+
+.tabla td{
+	border-bottom: 1px solid #CCC;
 }
