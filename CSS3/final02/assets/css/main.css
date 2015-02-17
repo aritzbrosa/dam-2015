@@ -1,0 +1,50 @@
+.start {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5em;
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('../img/clockFace.png');
+    left: 50%;
+    margin: 5em 0 0 -189px;
+}
+
+#clock div {
+    position: absolute;
+}
+
+#hour img{
+    animation-name: ordu;
+    animation-duration: 60s;/*3600s;*/
+    animation-iteration-count: infinite;
+    animation-timing-function: step(60);
+}
+
+@keyframes ordu{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+#minute img{
+    animation-name: minutu;
+    animation-duration: 1s;/*60s;*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#second img{
+    animation-name: segundu;
+    animation-duration: 0.016s; /*1s;*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* ANIMACIONES Y TRANSFORMACIONES */

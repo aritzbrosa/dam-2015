@@ -1,0 +1,61 @@
+#container { width: 500px; height:500px; position: relative;}
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+            position:absolute;
+            padding: 5px;
+            transition:all 1s linear 0.1s;
+        }
+        .box:hover {
+            background-color: blue;
+            color: yellow;
+            font-size: 18px;
+            position:absolute;
+            /*transform: rotate(270deg) scale(0.5, 0.5);*/
+
+        }
+        .ex01 .box {
+            /*left: 10px;
+            top: 10px;*/
+            transform: translate(10px, 10px);
+        }
+        .ex02 .box {
+            /*left: 10px;
+            top: 130px;*/
+            transform: translate(10px, 130px);
+
+        }
+        .ex03 .box {
+            /*left: 10px;
+            top: 250px;*/
+            transform: translate(10px, 250px);
+
+        }
+        .ex04 .box {
+            /*left: 10px;
+            top: 370px;*/
+            transform: translate(10px, 370px);
+
+        }
+        .ex01 .box:hover {
+            /*left: 10px;
+            top: 130px;*/
+            transform:translate(1000px,120px) rotate(270deg) scale(0.5, 0.5);
+        }
+        .ex02 .box:hover {
+            /*left: 10px;
+            top: 10px;*/
+            transform:translate(1000px,-120px) rotate(270deg) scale(0.5, 0.5);
+        }
+        .ex03 .box:hover {
+            /*left: 10px;
+            top: 370px;*/
+            transform:translate( 1000px,120px) rotate(270deg) scale(0.5, 0.5);
+        }
+        .ex04 .box:hover {
+            /*left: 10px;
+            top: 250px;*/
+            transform:translate( 1000px,-120px) rotate(270deg) scale(0.5, 0.5);
+        }

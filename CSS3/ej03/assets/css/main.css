@@ -1,0 +1,184 @@
+/* --------------------------------
+Site:       Site name
+CSS author: Your name here
+Updated:    Date
+Updated by: Your name here
+-------------------------------- */
+
+/* ----------------------------
+simple reset
+---------------------------- */
+
+/*Los estilos por defecto son para dispositivo móvil. Luego definimos para tablets y portátiles*/
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td
+{
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+body
+{
+    color: #000;
+    background: radial-gradient(#fff, #eee);
+    font: 90%/1.3 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+    padding-top: 50px;
+}
+
+.header {
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #bbb;
+    box-shadow: 0 -5px 15px 0 #000;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+    height: 40px;
+}
+
+.container
+{
+    padding: 10px;
+}
+
+.nav,
+.content,
+.extras {
+    background-color: #FFF;
+    border: 1px solid #eee;
+    padding: 0.5em;
+}
+.nav
+{
+    margin-bottom: 1em;
+}
+
+.nav li {
+    display:inline-block;
+}
+
+.content
+{
+    margin: 1em 0;
+}
+
+.extras
+{
+}
+
+.feature-image
+{
+    display:none;
+}
+
+/*Punto de corte: cuando la anchura minima del dispositivo supere 768px, aplica los siguientes estilos.
+Siempre al final de los estilos por defecto, ya que si no siempre tendríamos los estilos por defecto*/
+@media (min-width: 768px) {
+    /*Estos anchos mínimos son sacados del estándar de Bootstrap*/
+
+    body {
+        padding-top: 0;
+    }
+
+    .header {
+        background-color: none;
+        position: static;
+        width: 100%;
+        height: auto;
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    .header h1 {
+    margin: 1em 0;
+    text-align: left;
+    font-size: 2em;
+    }
+    
+    .nav {
+        width: 25%;
+        margin-bottom: 0 5px 0 0;
+    }
+    
+    .nav li {
+        display: block;
+    }
+
+    .content-tablet {
+        width: 73%;
+        margin-left: 1.5%;
+    }
+    
+    .content {
+        margin: 0;
+    }
+    .fleft {
+        float: left;
+    }
+
+    .fright {
+        float: right;
+    }
+
+    .feature-image {
+        display: block;
+        float: right;
+    }
+
+
+}
+
+/*Corte para portátiles, pantallas grandes*/
+@media (min-width: 992px) {
+    .content,
+    .extras {
+        float: left;
+    }
+
+    .content {
+        width: 60%;
+    }
+
+    .extras {
+        width: 38.076923077%;
+        margin-left: 1.923076923%;
+    }
+}
