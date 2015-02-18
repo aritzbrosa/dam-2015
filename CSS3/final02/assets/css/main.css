@@ -20,9 +20,9 @@
 
 #hour img{
     animation-name: ordu;
-    animation-duration: 60s;/*3600s;*/
+    animation-duration: 43200s;
     animation-iteration-count: infinite;
-    animation-timing-function: step(60);
+    animation-timing-function: linear;
 }
 
 @keyframes ordu{
@@ -35,16 +35,16 @@
 }
 
 #minute img{
-    animation-name: minutu;
-    animation-duration: 1s;/*60s;*/
+    animation-name: ordu;
+    animation-duration: 3600s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 #second img{
-    animation-name: segundu;
-    animation-duration: 0.016s; /*1s;*/
+    animation-name: ordu;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: steps(60,end);
 }
 /* ANIMACIONES Y TRANSFORMACIONES */
