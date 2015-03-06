@@ -1,0 +1,46 @@
+PRESTASHOP
+
+Distribucion: 
+Saas, en la nube.
+
+Costes: 
+Gratuito, pero pagar por módulos.
+
+Tecnologías: 
+Bootstrap, PHP.
+
+Licencia: 
+Open Software License version 3.0
+
+Requisitos: 
+	Apache 1.3 or later.
+	PHP 5.1 or later
+	Mysql 5 or later
+	Linux o Windows instalado.
+
+Incompatibilidades: 
+    PHP 5.2.1 (authentication is impossible)
+    PHP 5.2.6 (authentication is impossible under 64bit servers)
+    PHP 5.2.9 (image management/upload broken)
+    PHP < 5.2 (invalid date timezone)
+
+Ventajas:
+    Sencillez en instalación y uso.
+    BackOffice sencillo e intuitivo.
+    Rapidez de carga de las páginas.
+    Consume menos recursos por lo que no es imprescindible contar con un hosting dedicado.
+    Muy personalizable.
+    Gran cantidad de módulos (generalmente de pago) disponibles.
+    La Comunidad de Prestashop es muy activa, aunque en español está un paso por detrás que Inglés y Francés.
+
+Desventajas:
+    La mayor parte de módulos y plantillas para personalizar nuestra tienda, son de pago.
+    No dispone de soporte técnico.
+    SEO onPage no tan potente, aunque parece que ha habido importantes cambios en la versión 1.6.
+    Mala traduccion de los textos por defecto.
+
+Dirigido a:
+	Nació orientado para tiendas pequeñas pero  luego ha evolucionado para servir para tiendas más grandes.
+
+Módulos:
+	Conector Prestashop ERP. (UfactuW, UcontaW).

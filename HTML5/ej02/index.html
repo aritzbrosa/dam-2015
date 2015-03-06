@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video HTML5</title>
+
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<video id="player">
+			<source src="assets/videos/Teahupoo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    		<!-- <source src="assets/videos/Teahupoo.webm" type='video/webm; codecs="vp8, vorbis"'> -->
+		</video>
+		<form action="#">
+			<input type="button" value="Play" id="play">
+			<input type="button" value="Pause" id="pause">
+			<input type="button" value="Stop" id="stop">
+			<input type="button" value="Forward" id="forward">
+			<input type="button" value="Rewind">
+			<input type="button" value="Start">
+			<input type="button" value="End">
+			<input type="button" value="Fullscreen">
+			<input type="range" id="volume" min="0" max="1">
+			<progress id="progress">0</progress>
+		</form>
+	</div>
+
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
